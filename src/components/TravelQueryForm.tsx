@@ -1,13 +1,14 @@
 import { useEffect, useRef, useState } from "react";
-import { LangflowClient } from "./LangflowClient";
+import { LangflowClient } from "../utils/LangflowClient";
 import { io } from "socket.io-client";
 import { Send } from "lucide-react";
-import { Message } from "./types";
-import VideoStream from "./components/VideoStream";
-import ChatMessage from "./components/ChatMessage";
+import { Message } from "../types/types";
+import VideoStream from "./VideoStream";
+import ChatMessage from "./ChatMessage";
+import { API_URL } from "../utils/constant";
 
 const client = new LangflowClient();
-const socket = io("http://localhost:3000");
+const socket = io(API_URL);
 
 const TravelQueryForm = () => {
   const [messages, setMessages] = useState<Message[]>([]);

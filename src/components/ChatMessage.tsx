@@ -1,5 +1,5 @@
 import { User } from "lucide-react";
-import { Message } from "../types";
+import { Message } from "../types/types";
 import kai from '../assets/kai.png'
 
 interface ChatMessageProps {

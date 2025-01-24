@@ -1,8 +1,10 @@
+import { API_URL } from "./constant"
+
 export class LangflowClient {
     private baseURL: string
   
     constructor() {
-      this.baseURL = "http://localhost:3000" // Your proxy server URL
+      this.baseURL = API_URL 
     }
   
     async processQuery(inputValue: string): Promise<string> {

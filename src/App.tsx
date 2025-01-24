@@ -1,4 +1,4 @@
-import TravelQueryForm from './TravelQueryForm'
+import TravelQueryForm from './components/TravelQueryForm'
 
 const App = () => {
   return (
