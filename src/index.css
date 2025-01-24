@@ -1,0 +1,13 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@font-face {
+    font-family: "Graphic Pixel";
+    src: url("./fonts/graphicpixel.ttf") format("truetype");
+  }
+
+.fontPixel {
+    font-family: "Graphic Pixel", system-ui;
+  }
+
