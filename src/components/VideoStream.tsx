@@ -70,7 +70,7 @@ const VideoStream: React.FC<VideoStreamProps> = ({
         alt="Stream view"
       />
 
-      {!isStreaming && (
+      {!isStreaming && !imgRef.current?.src && (
         <div className="absolute inset-0 flex items-center justify-center">
           <div className="text-center text-gray-400">
             <VideoOff className="w-16 h-16 mx-auto mb-2" />

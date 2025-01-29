@@ -11,6 +11,6 @@ export interface LangflowResponse {
 export interface Message {
   sender: "user" | "ai";
   text: string;
-  type: "text" | "data";
+  type: "text" | "data" | 'markdown';
   data?: string[];
 }

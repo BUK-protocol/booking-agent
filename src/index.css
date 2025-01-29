@@ -11,3 +11,26 @@
     font-family: "Graphic Pixel", system-ui;
   }
 
+
+  .custom-scrollbar {
+    scrollbar-width: thin;
+  }
+  
+  .custom-scrollbar::-webkit-scrollbar {
+    width: 8px;  /* Adjust width as needed */
+  }
+  
+  .custom-scrollbar::-webkit-scrollbar-track {
+    background-color: #2a2a2a;  /* Dark background for the track */
+    border-radius: 4px;
+  }
+  
+  .custom-scrollbar::-webkit-scrollbar-thumb {
+    background-color: #cb3f29;  /* Your accent red color */
+    border-radius: 4px;
+  }
+  
+  /* Optional: Style the scrollbar corner if it appears */
+  .custom-scrollbar::-webkit-scrollbar-corner {
+    background-color: #2a2a2a;
+  }

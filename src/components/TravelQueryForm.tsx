@@ -74,7 +74,7 @@ const TravelQueryForm = () => {
       socket.on("display_data", (data) => {
         setMessages((prev) => [
           ...prev,
-          { sender: "ai", text: data.text, type: "data", data: data.data },
+          { sender: "ai", text: data.text, type: data.type, data: data.data },
         ]);
       });
     };
@@ -146,7 +146,7 @@ const TravelQueryForm = () => {
         setIsStreaming={setIsStreaming}
       />
       <div className="flex flex-col h-screen bg-[#1a1a1a] rounded-lg p-4 w-[30%]">
-        <div className="flex-1 overflow-y-auto scrollbar-thin scrollbar-thumb-gray-600 scrollbar-track-transparent pr-2">
+        <div className="flex-1 overflow-y-auto custom-scrollbar pr-2">
           <div className="space-y-4">
             {messages.map((message, index) => (
               <ChatMessage key={index} message={message} />
